@@ -80,43 +80,58 @@
     <h1><a href="index.html">SecureX+</a> - Contacto</h1>
   </header>
 
+  <!-- Contenedor de contacto -->
   <div class="contact-container">
     <h2>Estamos aquí para ayudarte</h2>
+
     <ul class="list-unstyled contact-info">
       <li><i class="fas fa-envelope"></i> contactosecurex@gmail.com</li>
-      <li><i class="fas fa-phone"></i> +34 611 753  919</li>
+      <li><i class="fas fa-phone"></i> +34 611 753 919</li>
       <li><i class="fas fa-phone"></i> +34 634 300 132</li>
       <li><i class="fas fa-phone"></i> +34 640 343 520</li>
       <li><i class="fas fa-map-marker-alt"></i> Barcelona, España</li>
-      <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/34612345678" target="_blank">+34 611 753  919 (WhatsApp)</a></li>
+      <li><i class="fab fa-whatsapp"></i> 
+        <a href="https://wa.me/34611753919" target="_blank">+34 611 753 919 (WhatsApp)</a>
+      </li>
     </ul>
 
+    <!-- Redes sociales -->
     <div class="text-center mt-4 social-icons">
-      <a href="https://instagram.com/securex" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/company/securex" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:contactosecurex@gmail.com"><i class="fas fa-envelope-circle-check"></i></a>
+      <a href="https://instagram.com/securex" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/company/securex" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:contactosecurex@gmail.com">
+        <i class="fas fa-envelope-circle-check"></i>
+      </a>
     </div>
-    
 
+    <!-- Mapa -->
     <div class="map mt-4">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy"></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18..." 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+      ></iframe>
     </div>
+
+    <!-- Formulario de contacto -->
+    <form action="https://formspree.io/f/xjkwvanb" method="POST" class="contact-form">
+      <label for="email">Tu correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Tu mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
   </div>
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xjkwvanb"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+
 </body>
 </html>
