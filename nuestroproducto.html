@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auditoría y Pentesting – SecureX+</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.7rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header h1 a:hover {
+      color: #0d6efd;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1581092334513-7c4c4bbf0b82') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .pre-block {
+      background-color: #212529;
+      color: #0f0;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      overflow-x: auto;
+    }
+
+    .table-dark th, .table-dark td {
+      border-color: #3a3a3a;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      margin-top: 20px;
+    }
+
+    .cta-section {
+      background-color: #e3f2fd;
+      padding: 50px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">SecureX+</a></h1>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Auditoría & Pentesting</h1>
+      <p>Descubre cómo identificamos vulnerabilidades en redes empresariales a través de simulaciones controladas y análisis avanzados con IA.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Fases de la Auditoría</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card p-4">
+          <h5 class="mb-3"><i class="fas fa-wifi text-primary"></i> Captura del Handshake (WiFi)</h5>
+          <p>Utilizamos adaptadores WiFi en modo monitor para interceptar tráfico e iniciar el ataque.</p>
+          <div class="pre-block">
+sudo airmon-ng start wlan0<br>
+sudo airodump-ng wlan0mon<br>
+sudo aireplay-ng --deauth 10 -a &lt;BSSID&gt; wlan0mon
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4">
+          <h5 class="mb-3"><i class="fas fa-unlock text-danger"></i> Crackeo de la Clave</h5>
+          <p>Uso de diccionarios como <code>rockyou.txt</code> para descifrar el handshake capturado.</p>
+          <div class="pre-block">
+aircrack-ng -w rockyou.txt -b &lt;BSSID&gt; captura.cap
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Reconocimiento y Explotación Interna</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card p-4">
+          <h5 class="mb-3"><i class="fas fa-network-wired text-success"></i> Descubrimiento de Hosts</h5>
+          <p>Mapeo de la red y detección de dispositivos activos.</p>
+          <div class="pre-block">
+nmap -sn 192.168.1.0/24
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4">
+          <h5 class="mb-3"><i class="fas fa-microscope text-info"></i> Escaneo de Servicios</h5>
+          <p>Detección de servicios vulnerables expuestos al interior de la red.</p>
+          <div class="pre-block">
+nmap -sS -sV -T4 192.168.1.X
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title">Servicios Atacables & Herramientas</h2>
+    <ul>
+      <li><strong>HTTP:</strong> Gobuster, Whatweb, SQLMap</li>
+      <li><strong>SMB:</strong> Enum4Linux, acceso a shares</li>
+      <li><strong>SSH:</strong> Ataques de fuerza bruta con Hydra</li>
+      <li><strong>AD:</strong> LDAP, Kerberos, GPP (si aplica)</li>
+    </ul>
+  </section>
+
+  <section class="container mb-5">
+    <h2 class="section-title">Escalado y Movimiento Lateral</h2>
+    <p>Desde un equipo comprometido se pueden descubrir rutas hacia otros sistemas o credenciales reutilizadas, escalando privilegios con herramientas como linPEAS o Linux Exploit Suggester.</p>
+    <img src="https://cdn.pixabay.com/photo/2022/03/16/07/56/hacker-7070880_960_720.jpg" class="img-fluid rounded shadow" alt="Pentesting gráfico AI" />
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title">Objetivos Comunes de los Ataques</h2>
+    <div class="table-responsive">
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Elemento</th>
+            <th>Motivo del ataque</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Routers/Switches</td><td>Control de tráfico</td></tr>
+          <tr><td>Servidores Web</td><td>Robo de datos</td></tr>
+          <tr><td>Base de Datos</td><td>Información sensible</td></tr>
+          <tr><td>Correo Electrónico</td><td>Phishing</td></tr>
+          <tr><td>IoT / Cámaras</td><td>Acceso encubierto</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Recomendaciones de Seguridad</h2>
+    <ul>
+      <li>Segmentación de red</li>
+      <li>Contraseñas robustas + MFA</li>
+      <li>Actualizaciones periódicas</li>
+      <li>Monitorización de logs</li>
+      <li>Principio de menor privilegio</li>
+    </ul>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title">Conclusión</h2>
+    <blockquote>
+      “Un solo punto débil puede comprometer toda la red. Con nuestras auditorías simulamos un ataque real para ayudarte a blindarte antes de que suceda.”<br>
+      <footer class="blockquote-footer mt-2">Equipo de SecureX+</footer>
+    </blockquote>
+  </section>
+
+  <section class="cta-section">
+    <h3>¿Quieres proteger tu red antes de que sea tarde?</h3>
+    <a href="#" class="btn btn-primary btn-lg mt-3">Solicita una Auditoría</a>
+    <a href="#" class="btn btn-outline-dark btn-lg mt-3">Ver más servicios</a>
+  </section>
+
+</body>
+</html>

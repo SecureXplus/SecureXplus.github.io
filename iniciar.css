@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #180000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .button-container {
+    margin-left: auto;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 50%;
+  }
+  
+  .centered-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
+    margin-bottom: 20px;
+    color: #1175e9;
+    text-decoration: none;
+  }
+  
+  .submit-button {
+    background-color: #1175e9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .button {
+    background-color: #2e4196;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .button-container .button:hover {
+    background-color: #3e8e41;
+  }
+.subscription-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.subscription-container h2 {
+  margin-bottom: 20px;
+}
+
+.subscription-container input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscription-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscription-container button:hover {
+  background-color: #0056b3;
+}

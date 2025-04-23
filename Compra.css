@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #000000;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+header h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-container {
+  text-align: center;
+}
+
+.product-container h2 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  color: #000000;
+}
+
+.product p {
+  color: #000000;
+}
+
+.price {
+  font-size: 20px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.btn-buy {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-buy:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  background-color: #2e4196;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.button-container .button:hover {
+  background-color: #3e8e41;
+}
+.subscription-container {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+margin: 20px auto;
+width: 80%;
+}
+
+.subscription-container h2 {
+margin-bottom: 20px;
+}
+
+.subscription-container input[type="email"] {
+width: 80%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.subscription-container button {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.subscription-container button:hover {
+background-color: #0056b3;
+}
+footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}

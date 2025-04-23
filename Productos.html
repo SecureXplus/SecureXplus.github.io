@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protección contra Amenazas Digitales</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.7rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header h1 a:hover {
+      color: #0d6efd;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+
+    .icon-box {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon-box i {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .ai-section {
+      background-color: #e3f2fd;
+      padding: 50px 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .cta-buttons a {
+      margin: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '✓';
+      color: #0d6efd;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">SecureX+</a></h1>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Protección contra Amenazas Digitales</h1>
+      <p>Anticípate a los ataques. Protege tu empresa con tecnología de detección y defensa avanzada impulsada por IA.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">¿Qué es la Protección contra Amenazas?</h2>
+    <p class="text-center">No basta con reaccionar. Hoy, la ciberseguridad debe anticiparse a cada movimiento de los atacantes. Utilizamos algoritmos inteligentes y vigilancia continua para mantenerte siempre un paso adelante.</p>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="section-title">Principales Amenazas</h2>
+    <div class="row text-center">
+      <div class="col-md-3 icon-box">
+        <i class="fas fa-fish"></i>
+        <h5>Phishing</h5>
+        <p>Bloqueo de sitios y correos falsos en tiempo real.</p>
+      </div>
+      <div class="col-md-3 icon-box">
+        <i class="fas fa-lock"></i>
+        <h5>Ransomware</h5>
+        <p>Defensas activas contra cifrado y chantaje digital.</p>
+      </div>
+      <div class="col-md-3 icon-box">
+        <i class="fas fa-user-secret"></i>
+        <h5>Fuerza Bruta</h5>
+        <p>IA que detecta intentos de acceso repetitivos.</p>
+      </div>
+      <div class="col-md-3 icon-box">
+        <i class="fas fa-network-wired"></i>
+        <h5>Amenazas Internas</h5>
+        <p>Control de usuarios y anomalías dentro de tu red.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container ai-section">
+    <h2 class="section-title">Nuestra IA en Acción</h2>
+    <p>Mediante redes neuronales y machine learning, analizamos millones de eventos por segundo para detectar actividades sospechosas y detenerlas antes de que ocurran.</p>
+    <ul>
+      <li>Detección autónoma de amenazas 0-day</li>
+      <li>Análisis predictivo de comportamiento</li>
+      <li>Respuesta automatizada en milisegundos</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Beneficios para tu Empresa</h2>
+    <ul>
+      <li>Menor exposición a ataques y pérdidas</li>
+      <li>Mayor disponibilidad operativa</li>
+      <li>Confianza del cliente reforzada</li>
+      <li>Cumplimiento con normativas ISO/GDPR</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Casos de Éxito</h2>
+    <blockquote>
+      “Desde que trabajamos con SecureX+, los ataques fueron neutralizados antes de que pudiéramos notarlos. Es como tener un ejército de guardianes digitales 24/7.”
+      <footer class="blockquote-footer mt-2">CISO de empresa tecnológica</footer>
+    </blockquote>
+  </section>
+
+  <section class="container text-center my-5 cta-buttons">
+    <h3>¿Listo para defender tu futuro digital?</h3>
+    <a href="#" class="btn btn-primary btn-lg">Contáctanos</a>
+    <a href="#" class="btn btn-outline-dark btn-lg">Solicita una demo</a>
+  </section>
+
+</body>
+</html>
