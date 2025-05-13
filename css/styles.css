@@ -30,13 +30,13 @@ body {
 }
 
 ::selection {
-    color: #fff;
-    background: #f49500;
+    color: #ffffff;
+    background: #e01414;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #f49500;
+    background: #e01414;
 }
 
 p {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pDark p {
-    color: #6D6D6D;
+    color: #ffffff;
 }
 
 #services .circle:hover {
@@ -85,11 +85,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pDark h3 {
-    color: #BEBEBE;
+    color: #ffffff;
 }
 
 .btn {
-    background: #f49500;
+    background: #e01414;
 }
 
 .btn:hover {
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #f49500;
+    color: #f40000;
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -201,20 +201,21 @@ a:hover {
 .header {
     position: fixed;
     width: 100%;
-    background: #af731f;
+    background: rgb(0, 0, 0); /* color estándar */
     z-index: 50;
     border-radius: 0;
     top: 0px;
-    border-bottom: 1px solid #D6D6D6;
+    border-bottom: 1px solid #ff0000;
 }
+
 
 .navbar-inverse {
     background: transparent;
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #f49500;
-    background-color: #f49500;
+    border-color: #e01414;
+    background-color: #e01414;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -223,7 +224,7 @@ a:hover {
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background: #f49500;
+    background: #e01414;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
@@ -248,12 +249,12 @@ a:hover {
     font: 16px/30px 'opensans-regular', sans-serif;
     padding: 0;
     margin: 12px 8% 0;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    text-shadow: 0px 1px 2px rgba(255, 0, 0, 0.2);
 }
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
-    border-bottom: 4px solid #f49500;
+    border-bottom: 4px solid #e01414;
 }
 
 .carousel-inner > .item {
@@ -285,7 +286,7 @@ a:hover {
 
 .actionPanel {
     padding: 25px 0;
-    background: #f49500;
+    background: #e01414;
 }
 
 .actionPanel h3 {
@@ -293,7 +294,7 @@ a:hover {
 }
 
 .circle {
-    background: #f49500;
+    background: #e01414;
     height: 90px;
     width: 90px;
     border-radius: 95px;
@@ -358,7 +359,7 @@ a:hover {
     border: 1px solid #fff;
     border-top: none;
     border-bottom: none;
-    background: #FFC780;
+    background: #c91313;
 }
 
 .navbar-nav > li:hover > a {
@@ -390,7 +391,7 @@ a:hover {
 }
 
 .page-section h2 {
-    color: #f49500;
+    color: #e01414;
 }
 
 .page-section p {
@@ -403,7 +404,7 @@ a:hover {
 }
 
 .darkBg .fa {
-    color: #f49500;
+    color: #e01414;
 }
 /*--- Banner ----*/
 .banner-container {
@@ -416,7 +417,7 @@ a:hover {
     background-size: cover;
     margin-top: 60px;
     position: relative;
-    border-bottom: 2px #f49500 solid;
+    border-bottom: 2px #e01414 solid;
 }
 
 .banner-container > img {
@@ -525,7 +526,7 @@ a:hover {
     margin: 3px;
     cursor: pointer;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.1);
-    border: 2px solid #f49500;
+    border: 2px solid #e01414
 }
 
 img, video, iframe, embed, object {
@@ -620,7 +621,7 @@ img, video, iframe, embed, object {
 
 .member-img {
     overflow: hidden;
-    border: 1px solid #FFAD00;
+    border: 1px solid #e01414
     padding: 5px;
 }
 
@@ -726,12 +727,12 @@ nav#filter li {
 nav#filter a {
     padding: 4px 12px;
     line-height: 20px;
-    border: 1px solid #f49500;
+    border: 1px solid #e01414
     text-decoration: none;
 }
 
 .current {
-    background: #f49500;
+    background: #e01414
     color: #fff;
 }
 
@@ -783,7 +784,7 @@ nav#filter a {
 }
 
 .portfolio-item .portfolio-desc a {
-    color: #f49500;
+    color: #e01414
     text-align: center;
     display: block;
 }
@@ -1316,7 +1317,7 @@ footer {
 }
 
 .flat .plan.featured:hover li.plan-name, .flat .plan:hover li.plan-name, .flat .plan.featured.plan-name {
-    background: #f49500 !important;
+    background: #e01414 !important;
 }
 
 .customNavigation {
