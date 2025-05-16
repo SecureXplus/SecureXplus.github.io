@@ -196,125 +196,135 @@
   <!--/.container--> 
 </section>
 <section id="services">
-  <div class="container">
-    <!-- Título de la sección -->
-    <div class="heading text-center">
+  <div class="services-container">
+    <!-- Encabezado de sección -->
+    <div class="services-heading">
       <h2>Servicios</h2>
       <p>Soluciones integrales para proteger tu información y tu infraestructura digital.</p>
     </div>
 
-    <!-- Fila de servicios -->
-    <div class="row">
-      <!-- Servicio 1: Auditorías y Evaluaciones de Seguridad -->
-      <div class="col-md-3 col-sm-6 service-item">
-        <div class="service-icon">
-          <i class="fa fa-shield-alt fa-3x"></i>
-        </div>
-        <h3>Auditorías <span class="id-color">y Evaluaciones de Seguridad</span></h3>
-        <p>Revisión exhaustiva de tus sistemas, redes y aplicaciones para identificar vulnerabilidades. Simulamos ataques cibernéticos para evaluar tu capacidad de defensa.</p>
+    <!-- Grid de servicios -->
+    <div class="services-grid">
+      <!-- Servicio 1 -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa fa-shield-alt"></i></div>
+        <h3>Auditorías <span>y Evaluaciones de Seguridad</span></h3>
+        <p>Revisión de sistemas, redes y aplicaciones. Simulamos ataques para evaluar tu capacidad de defensa.</p>
       </div>
 
-      <!-- Servicio 2: Monitoreo y Detección de Amenazas -->
-      <div class="col-md-3 col-sm-6 service-item">
-        <div class="service-icon">
-          <i class="fa fa-eye fa-3x"></i>
-        </div>
-        <h3>Monitoreo <span class="id-color">y Detección de Amenazas</span></h3>
-        <p>Monitoreo continuo para detectar actividades sospechosas o intrusiones en tus sistemas, utilizando herramientas avanzadas de detección para una respuesta rápida ante incidentes.</p>
+      <!-- Servicio 2 -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa fa-eye"></i></div>
+        <h3>Monitoreo <span>y Detección de Amenazas</span></h3>
+        <p>Supervisión constante con herramientas avanzadas para detectar y responder rápidamente ante incidentes.</p>
       </div>
 
-      <!-- Servicio 3: Capacitación y Concientización en Ciberseguridad -->
-      <div class="col-md-3 col-sm-6 service-item">
-        <div class="service-icon">
-          <i class="fa fa-chalkboard-teacher fa-3x"></i>
-        </div>
-        <h3>Capacitación <span class="id-color">y Concientización en Ciberseguridad</span></h3>
-        <p>Entrenamos a tu equipo en las mejores prácticas de seguridad para prevenir ciberataques. Promovemos una cultura de seguridad digital que protege tanto a las personas como a los sistemas.</p>
+      <!-- Servicio 3 -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa fa-chalkboard-teacher"></i></div>
+        <h3>Capacitación <span>y Concientización</span></h3>
+        <p>Formamos a tu equipo en buenas prácticas para fomentar una cultura sólida de ciberseguridad.</p>
       </div>
 
-      <!-- Servicio 4: Gestión de Cumplimiento Normativo y Privacidad -->
-      <div class="col-md-3 col-sm-6 service-item">
-        <div class="service-icon">
-          <i class="fa fa-gavel fa-3x"></i>
-        </div>
-        <h3>Gestión de <span class="id-color">Cumplimiento Normativo y Privacidad</span></h3>
-        <p>Te ayudamos a cumplir con las normativas internacionales de seguridad y privacidad (ISO 27001, GDPR), garantizando que tus prácticas sean legales y seguras.</p>
+      <!-- Servicio 4 -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa fa-gavel"></i></div>
+        <h3>Gestión de <span>Cumplimiento Normativo</span></h3>
+        <p>Cumple con normativas como ISO 27001 y GDPR. Garantizamos prácticas legales y seguras.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Estilos adicionales para mejorar el diseño -->
+<!-- Estilos ESPECÍFICOS para la sección de servicios -->
 <style>
   #services {
-    background-color: #f4f7fa;
-    padding: 60px 0;
+    background-color: #ffffffa1;
+    color: rgb(0, 0, 0);
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
   }
 
-  .heading {
-    margin-bottom: 50px;
+  #services .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .heading h2 {
-    font-size: 36px;
-    font-weight: 600;
-    color: #333;
-  }
-
-  .heading p {
-    font-size: 18px;
-    color: #777;
-  }
-
-  .service-item {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+  #services .services-heading {
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
-  .service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  #services .services-heading h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
   }
 
-  .service-icon {
+  #services .services-heading p {
+    font-size: 18px;
     color: #000000;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #services .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  #services .service-card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 30px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #services .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  }
+
+  #services .service-icon {
+    font-size: 40px;
+    color: #ff0000;
     margin-bottom: 20px;
   }
 
-  .service-content h3 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #333;
+  #services .service-card h3 {
+    font-size: 20px;
     margin-bottom: 15px;
+    color: white;
   }
 
-  .service-content p {
-    color: #555;
-    font-size: 16px;
-  }
-
-  .id-color {
+  #services .service-card h3 span {
     color: #ff0000;
+    display: block;
+    font-weight: 400;
+  }
+
+  #services .service-card p {
+    font-size: 15px;
+    color: #bbbbbb;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {
-    .service-item {
-      width: 48%;
-      margin: 0 10px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .service-item {
-      width: 100%;
+    #services .services-grid {
+      flex-direction: column;
+      align-items: center;
     }
   }
 </style>
+
+<!-- Font Awesome (si aún no lo tienes incluido) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 <!-- Animación de Fade In con JavaScript -->
 <script>
@@ -467,8 +477,8 @@
   <div class="container">
     <div class="heading text-center"> 
       <!-- Heading -->
-      <h2>Our Plans</h2>
-      <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+      <h2>Nuestros planes</h2>
+      <p>.</p>
     </div>
     <div class="row flat">
       <div class="col-lg-3 col-md-3 col-xs-6">
@@ -526,8 +536,8 @@
   <div class="container">
     <div class="heading text-center"> 
       <!-- Heading -->
-      <h2>Our Team</h2>
-      <p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>
+      <h2>Nuestro equipo</h2>
+      <p>Conoce a las personas que hacen todo esto posible...</p>
     </div>
     <!-- Team Member's Details -->
     <div class="team-content">
@@ -540,9 +550,9 @@
               <!-- Image  --> 
               <img class="img-responsive" src="images/photo-1.jpg" alt=""> </div>
             <!-- Member Details -->
-            <h4>John Doe</h4>
+            <h4>Umer MUghal</h4>
             <!-- Designation --> 
-            <span class="pos">CEO</span>
+            <span class="pos">CEO + Desarrollador web</span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
@@ -554,9 +564,9 @@
               <!-- Image  --> 
               <img class="img-responsive" src="images/photo-2.jpg" alt=""> </div>
             <!-- Member Details -->
-            <h4>Larry Doe</h4>
+            <h4>Moha Akanni</h4>
             <!-- Designation --> 
-            <span class="pos">Art Director</span>
+            <span class="pos">Desarrolladora</span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
@@ -568,9 +578,9 @@
               <!-- Image  --> 
               <img class="img-responsive" src="images/photo-3.jpg" alt=""> </div>
             <!-- Member Details -->
-            <h4>Ranith Kays</h4>
+            <h4>Mauro Vives</h4>
             <!-- Designation --> 
-            <span class="pos">Manager</span>
+            <span class="pos">Molestar a el harjot</span>
             <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
           </div>
         </div>
